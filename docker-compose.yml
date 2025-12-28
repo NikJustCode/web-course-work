@@ -1,0 +1,35 @@
+services:
+  # Настройка базы данных
+  db:
+    image: postgres:15
+    container_name: vending_db_container
+    environment:
+      POSTGRES_DB: vending_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  # Настройка твоего приложения
+  app:
+    build: .
+    container_name: vending_app_container
+    depends_on:
+      - db
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: vending_db
+      DB_USERNAME: postgres
+      DB_PASSWORD: postgres
+      UPLOAD_PATH: /app/uploads/
+    ports:
+      - "80:8080"
+    volumes:
+      # Связываем папку uploads на сервере с папкой внутри Docker
+      - ./uploads:/app/uploads
+
+volumes:
+  postgres_data:
