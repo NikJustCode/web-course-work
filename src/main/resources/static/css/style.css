@@ -1,24 +1,3 @@
-/* ============================================================================
-   STYLE.CSS - History Coffee
-   Организация:
-   1. Шрифты и глобальные стили
-   2. Типографика
-   3. Кнопки
-   4. Формы
-   5. Карточки и контейнеры
-   6. Таблицы
-   7. Уведомления
-   8. Хедер и навигация
-   9. Футер
-   10. Главная страница (Hero, Features, Partnership)
-   11. Страница контактов
-   12. Страницы авторизации (Login, Registration)
-   13. Личные кабинеты (Admin, Franchisee)
-   ============================================================================ */
-
-/* ==========================================================================
-   1. ШРИФТЫ И ГЛОБАЛЬНЫЕ СТИЛИ
-   ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap');
 
 * {
@@ -61,9 +40,6 @@ a {
     background: #999;
 }
 
-/* ==========================================================================
-   2. ТИПОГРАФИКА
-   ========================================================================== */
 h1,
 h2,
 h3,
@@ -93,9 +69,6 @@ p {
     color: #666666;
 }
 
-/* ==========================================================================
-   3. КНОПКИ
-   ========================================================================== */
 .button {
     display: inline-flex;
     align-items: center;
@@ -120,7 +93,6 @@ p {
     transform: translateY(1px);
 }
 
-/* Размеры */
 .button--small {
     height: 32px;
     padding: 0 16px;
@@ -134,7 +106,6 @@ p {
     font-size: 1.1rem;
 }
 
-/* Цвета */
 .button--primary {
     background-color: #2C1A1D;
     color: #FFFFFF;
@@ -225,9 +196,6 @@ p {
     border-color: rgba(255, 255, 255, 0.5);
 }
 
-/* ==========================================================================
-   4. ФОРМЫ
-   ========================================================================== */
 .form-field {
     margin-bottom: 20px;
     text-align: left;
@@ -274,7 +242,6 @@ textarea.form-field__input {
     padding: 5px 10px;
 }
 
-/* Чекбоксы */
 .checkbox-group {
     display: flex;
     flex-wrap: wrap;
@@ -321,9 +288,6 @@ textarea.form-field__input {
     border-color: #bbb;
 }
 
-/* ==========================================================================
-   5. КАРТОЧКИ И КОНТЕЙНЕРЫ
-   ========================================================================== */
 .page-content {
     max-width: 1200px;
     width: 90%;
@@ -362,9 +326,6 @@ textarea.form-field__input {
     margin-bottom: 1.5rem;
 }
 
-/* ==========================================================================
-   6. ТАБЛИЦЫ
-   ========================================================================== */
 .admin-table {
     width: 100%;
     border-collapse: separate;
@@ -438,9 +399,6 @@ textarea.form-field__input {
     display: inline;
 }
 
-/* ==========================================================================
-   7. УВЕДОМЛЕНИЯ
-   ========================================================================== */
 .notification {
     padding: 12px 16px;
     border-radius: 6px;
@@ -476,9 +434,6 @@ textarea.form-field__input {
     text-align: center;
 }
 
-/* ==========================================================================
-   8. ХЕДЕР И НАВИГАЦИЯ
-   ========================================================================== */
 .site-header {
     height: 70px;
     background-color: #FFFFFF;
@@ -547,7 +502,6 @@ textarea.form-field__input {
     display: inline;
 }
 
-/* Cabinet Header for Admin/Franchisee */
 .cabinet-header {
     height: 60px;
     background-color: #2C1A1D;
@@ -608,9 +562,6 @@ textarea.form-field__input {
     justify-self: end;
 }
 
-/* ==========================================================================
-   9. ФУТЕР
-   ========================================================================== */
 .site-footer {
     background-color: #2C1A1D;
     color: #FFFFFF;
@@ -688,9 +639,6 @@ textarea.form-field__input {
     font-size: 0.85rem;
 }
 
-/* ==========================================================================
-   10. ГЛАВНАЯ СТРАНИЦА (Hero, Features, Partnership)
-   ========================================================================== */
 .hero-section {
     text-align: center;
     padding: 80px 20px;
@@ -729,7 +677,6 @@ textarea.form-field__input {
     margin-top: 30px;
 }
 
-/* Advantages Section - Grid Layout */
 .advantages-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -752,7 +699,6 @@ textarea.form-field__input {
     line-height: 1.7;
 }
 
-/* Company Stats - Grid Layout */
 .company-stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -779,7 +725,6 @@ textarea.form-field__input {
     margin: 0;
 }
 
-/* Partnership CTA */
 .partnership-cta {
     text-align: center;
     margin: 50px 0 30px;
@@ -795,9 +740,6 @@ textarea.form-field__input {
     color: #666;
 }
 
-/* ==========================================================================
-   11. СТРАНИЦА КОНТАКТОВ
-   ========================================================================== */
 .contact-header__title {
     margin-bottom: 30px;
 }
@@ -844,7 +786,6 @@ textarea.form-field__input {
     text-decoration: underline;
 }
 
-/* Feedback Form */
 .feedback-form {
     max-width: 600px;
     margin: 0 auto;
@@ -870,9 +811,6 @@ textarea.form-field__input {
     box-shadow: 0 0 0 3px rgba(212, 160, 23, 0.1);
 }
 
-/* ==========================================================================
-   12. СТРАНИЦЫ АВТОРИЗАЦИИ (Login, Registration)
-   ========================================================================== */
 .auth-page {
     max-width: 440px;
     margin: 60px auto;
@@ -899,9 +837,6 @@ textarea.form-field__input {
     font-weight: 600;
 }
 
-/* ==========================================================================
-   12.5. СТРАНИЦА ОШИБКИ
-   ========================================================================== */
 .error-page {
     max-width: 600px;
     margin: 80px auto;
@@ -952,9 +887,6 @@ textarea.form-field__input {
     justify-content: center;
 }
 
-/* ==========================================================================
-   12.6. ФОРМА ТОВАРОВ (Admin Products)
-   ========================================================================== */
 .product-form {
     max-width: 600px;
     margin: 0 auto;
@@ -1000,11 +932,6 @@ textarea.form-field__input {
     margin-top: 25px;
 }
 
-/* ==========================================================================
-   13. ЛИЧНЫЕ КАБИНЕТЫ (Admin, Franchisee)
-   ========================================================================== */
-
-/* --- Общие стили кабинетов --- */
 .page-header-actions {
     display: flex;
     justify-content: space-between;
@@ -1012,19 +939,11 @@ textarea.form-field__input {
     margin-bottom: 2rem;
 }
 
-.dashboard-overview {
-    /* Главный контейнер дашборда */
-}
-
 .dashboard-widgets-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 24px;
     margin-top: 24px;
-}
-
-.dashboard-widget {
-    /* Виджет дашборда */
 }
 
 .dashboard-widget__title {
@@ -1041,7 +960,6 @@ textarea.form-field__input {
     text-align: center;
 }
 
-/* --- Таблицы в кабинетах --- */
 .product-thumbnail {
     width: 50px;
     height: 50px;
@@ -1092,7 +1010,6 @@ textarea.form-field__input {
     color: #333;
 }
 
-/* --- Заказы --- */
 .status-update-form {
     display: flex;
     align-items: center;
@@ -1125,7 +1042,6 @@ textarea.form-field__input {
     width: 100px;
 }
 
-/* --- Детали заказа --- */
 .order-details-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1160,7 +1076,6 @@ textarea.form-field__input {
     font-weight: 700;
 }
 
-/* Status Badges */
 .status-badge {
     display: inline-block;
     padding: 4px 12px;
@@ -1200,13 +1115,11 @@ textarea.form-field__input {
     color: #757575;
 }
 
-/* --- Склад --- */
 .warehouse-actions-group {
     display: flex;
     gap: 10px;
 }
 
-/* --- Автоматы --- */
 .machine-address-text {
     font-size: 1.1rem;
     margin-bottom: 24px;
@@ -1216,7 +1129,6 @@ textarea.form-field__input {
     margin-bottom: 24px;
 }
 
-/* --- Сотрудники (Список) --- */
 .employee-contacts {
     display: flex;
     flex-direction: column;
